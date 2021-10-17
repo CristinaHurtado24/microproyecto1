@@ -88,7 +88,9 @@ body{
 }
 
 /*Experience*/
-
+.container .experience h1.stitle{
+    color:#5A6CC2
+}
 .container{
     margin: 20px 10vw;
 }
@@ -126,4 +128,44 @@ span{
 .proyect ul li{
     margin-left: 30px;
     margin-bottom: 5px;
+}
+
+/*ABOUT ME*/
+.container .aboutme h1.stitle{
+    color:#5A6CC2
+}
+
+.container .aboutme .block{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+.container .aboutme .my_image{
+    display: flex;
+    justify-content: flex-start;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.container .aboutme .info{
+    align-self: center;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.container .aboutme .block .info span {
+    font-size: 1em;
+    color: #25af8a ; 
+}
+
+.container .aboutme .block .info h4{
+    margin-bottom: 20px;
+}
+.container .aboutme .block .info ul li{
+    margin-left: 40px;
 }
