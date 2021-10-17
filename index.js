@@ -1,5 +1,5 @@
 //HERO
-var images = ['./img/im1.png','./img/img2.png','./img/img4.png'],
+var images = ['./img/img2.png','./img/im1.png','./img/img4.png'],
     cont = 0;
 
 function hero_carrousel(hero){
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 //GRAFICO DE SKILLS
 
-const json =[{tech:"Python",percent:"70"}, {tech:"HTML", percent:"55"},{tech: "CSS", percent:"45"}, {tech:"JavaScript", percent:"20"}, {tech:"Java", percent:"65"}];
+const skills_json =[{tech:"Python",percent:"70"}, {tech:"HTML", percent:"55"},{tech: "CSS", percent:"45"}, {tech:"JavaScript", percent:"20"}, {tech:"Java", percent:"65"}];
 
 const mainSelectorContainer = document.getElementById('skills')
 
@@ -54,4 +54,57 @@ function progress_bar(json){
         `
     };
 }
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    progress_bar(skills_json);
+});
+
+//FORMULARIO
+
+const form = document.getElementById('written');
+
+function validateForm(event) {
+    event.preventDefault();
+  let x = document.getElementById("name").value, y=document.getElementById("lastname").value, z=document.getElementById("email").value, w = document.getElementById("mensaje").value;
+
+  if (x === "") {
+    alert("Debe ingresar su nombre");
+    return false;
+  }else if(y===""){
+      alert("Debe ingresar su apellido");
+    return false;
+  }else if(w===""){
+      alert("Debe ingresar el mensaje que desea enviar");
+    return false;
+  }else if(z===''){
+      alert("Debe ingresar un correo valido");
+    return false;
+  }else if(z!==''){
+      if(z.includes('@')){
+          alert('Su solicitud fue enviada exitosamente')
+          return true;
+      }else{
+          alert("Debe ingresar un correo valido");
+            return false;
+      };   
+  };
+};
+
+
+
+function showValues(event){
+    let x = form["name"].value, y=form["lastname"].value, z=form["email"].value, w = form["mensaje"].value;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    console.log(w);
+
+}
+
+
+
+form.addEventListener('submit', validateForm);
+form.addEventListener("submit", showValues);
+
+
 

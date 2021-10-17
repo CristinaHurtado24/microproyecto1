@@ -181,6 +181,7 @@ hr{
     border-radius: 20px;
     height: 30px;
     width:300px;
+    margin-bottom: 20px;
 }
 
 .container .skills .progress_box .progress_done{
@@ -193,6 +194,51 @@ hr{
     align-items: center;
     font-weight: bold;
 }
+
+/*CONTACT ME*/
+.contact h1.stitle{
+    color:white;
+    font-size: 1em;
+    margin: 20px 130px;
+
+}
+.contact {
+    background-color: #8795ef;
+    margin: 0px 0px;
+}
+
+.contact .writeme{
+    align-items:center;
+    margin-left:40px
+}
+
+.contact .writeme input{
+    outline:none;
+    border-radius: 10px;
+    padding: 2.5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .writeme textarea{
+    outline:none;
+}
+
+.contact .socials{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact .socials img{
+    color:#ffff;
+    margin-right: 30px;
+}
+
+.contact .writeme button{
+    padding: 5px;
+    margin: 10px 110px;
+}
+
 
 
 

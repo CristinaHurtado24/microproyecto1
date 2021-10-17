@@ -16,7 +16,7 @@
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#experience">Experiencia</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
         </ul>
         </div>
     </nav>
@@ -35,10 +35,10 @@
             <div class="forward button">
                 &#62
             </div>
-            <img src="./img/im1.png" alt="imagenes" class="img" id="hero_image">
+            <img src="./img/img2.png" alt="imagenes" class="img" id="hero_image">
 
     </div>
-    <script src="/index.js"></script>
+    
     <hr>
     <div class="container">
         <section id="experience" class="experience">
@@ -53,7 +53,7 @@
                 </ul>
                 <h4>Realizado en noviembre de 2020</h4>
                 <h4> <a  target="_blank" href="https://github.com/CristinaHurtado24/MyFirstProject"> Visita el repositorio!</a> </h4>
-                <img src="./img/saman-delivery.png" alt="">
+                <img src="./img/saman-delivery.png" alt="delivery">
             </div>
             <div class="proyect">
                 <h3 class="title">2. Fake Youtube</h2>
@@ -67,8 +67,8 @@
                     <h4>Realizado el 16 de octubre de 2021</h4>
                     <h4> <a target="_blank" href="https://github.com/CristinaHurtado24/Youtube"> Visita el repositorio!</a> </h4>
                     
-                    <!--PONER FOTO DEL YOUTUBE FAKEEE-->
-                    <img src="#" alt="">
+              
+                    <img src="./img/youtube.jpg" alt="youtubefake">
             </div>
             <div class="proyect">
                 <h3 class="title">3. To-Do-List</h2>
@@ -115,14 +115,33 @@
         <hr>
         <section id="skills" class="skills">
             <h1 class="stitle"> <span>Skills</span></h1>
-            <div class="progress_box">
-                <h5>Python</h5>
-                <div class="progress_done">
-                    70%
-                </div>
-            </div>
         </section>
+        <hr>
     </div>
+    <section id="contactme" class="contact">
+        <h1 class="stitle"> <span>Contact Me</span></h1>
+        <form id="written" class="writeme" method="post">
+            <label for="name">Name</label>
+            <input id="name" class="name" type="text" placeholder="Ej: Susana"> 
+            <br>
+            <label for="lastname">Apellido</label>
+            <input id="lastname" class="lastname" type="text" placeholder="Ej: Rodriguez">
+            <br>
+            <label for="email">email</label>
+            <input id="email" class="email" type="text" placeholder="ejemplo@gmail.com" required="@"> 
+            <br>
+            <label for="coment">Mensaje</label>
+            <textarea id="mensaje" name="coment" class="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <button id="btnsend" type="submit">Enviar</button>
+        </form>
+        <div class="socials">
+            <a target="_blank" class="social" href="https://twitter.com/CrisHurtado_24"><img src="./icons/social1.svg" alt="To-do-list"></a>
+            <a target="_blank" class="social" href="https://www.instagram.com/cristinahurtado24/"><img src="./icons/social2.svg" alt="instagram"></a>
+            <a target="_blank" class="social" href="https://www.linkedin.com/in/cristina-hurtado-978a71219"><img src="./icons/social3.svg"alt="linkedin"></a>
 
+        </div>
+    </section>
+    <script src="/index.js"></script>
 </body>
 </html>
