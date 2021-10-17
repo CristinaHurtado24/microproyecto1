@@ -8,7 +8,6 @@ function hero_carrousel(hero){
             img = hero.querySelector('.img'),
             tg = e.target;
 
-        
         if(tg == atras){
             if(cont >0){
                 img.src = images[cont-1];
