@@ -218,6 +218,7 @@ hr{
     padding: 2.5px;
     margin-left: 20px;
     margin-bottom: 10px;
+    align-self: center;
 }
 
 .contact .writeme textarea{
@@ -232,6 +233,7 @@ hr{
 .contact .socials img{
     color:#ffff;
     margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .contact .writeme button{
