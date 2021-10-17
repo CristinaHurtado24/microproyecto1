@@ -1,3 +1,4 @@
+//HERO
 var images = ['./img/im1.png','./img/img2.png','./img/img4.png'],
     cont = 0;
 
@@ -33,3 +34,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     hero_carrousel(contenedor);
 });
+
+//GRAFICO DE SKILLS
+
+const json =[{tech:"Python",percent:"70"}, {tech:"HTML", percent:"55"},{tech: "CSS", percent:"45"}, {tech:"JavaScript", percent:"20"}, {tech:"Java", percent:"65"}];
+
+const mainSelectorContainer = document.getElementById('skills')
+
+function progress_bar(json){
+    for (let conty = 0; conty < json.length; conty++) {
+        const element = json[conty];
+        mainSelectorContainer.innerHTML +=`
+            <div class="progress_box">
+                <h5>${element['tech']}</h5>
+                <div class="progress_done">
+                    ${element['percent']}%
+                </div>
+            </div>
+        `
+    };
+}
+

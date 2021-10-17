@@ -169,3 +169,30 @@ hr{
 .container .aboutme .block .info ul li{
     margin-left: 40px;
 }
+
+/*PROGRESS BARS*/
+.container .skills h1.stitle{
+    color:#5A6CC2;
+    margin-bottom: 20px;
+}
+
+.container .skills .progress_box{
+    background-color: #e3f4f3;
+    border-radius: 20px;
+    height: 30px;
+    width:300px;
+}
+
+.container .skills .progress_box .progress_done{
+    box-shadow: 0 3px 3px -5px;
+    background-color: blue;
+    color: white;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
